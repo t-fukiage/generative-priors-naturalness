@@ -1,0 +1,52 @@
+{
+  "psnr": {
+    "backend": "psnr",
+    "mode": "FR",
+    "lower_better": false
+  },
+  "ssim": {
+    "backend": "ssim",
+    "mode": "FR",
+    "lower_better": false
+  },
+  "vif": {
+    "backend": "vif",
+    "mode": "FR",
+    "lower_better": false
+  },
+  "lpips_vgg": {
+    "backend": "lpips-vgg",
+    "mode": "FR",
+    "lower_better": true
+  },
+  "dists": {
+    "backend": "dists",
+    "mode": "FR",
+    "lower_better": true
+  },
+  "niqe": {
+    "backend": "niqe",
+    "mode": "NR",
+    "lower_better": true
+  },
+  "brisque": {
+    "backend": "brisque",
+    "mode": "NR",
+    "lower_better": true
+  },
+  "hyperiqa": {
+    "backend": "hyperiqa",
+    "mode": "NR",
+    "lower_better": false
+  },
+  "musiq": {
+    "backend": "musiq",
+    "mode": "NR",
+    "lower_better": false
+  },
+  "liqe": {
+    "backend": "liqe",
+    "mode": "NR",
+    "lower_better": false
+  }
+}

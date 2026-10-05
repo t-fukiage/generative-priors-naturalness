@@ -1,0 +1,45 @@
+factor_id,factor_order,factor_code,factor_label,operation,operation_label,condition,family,level_order,level_value,level_label,n_pairs
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,0,shadow_shape_cube_sphere,Cube ↔ sphere,8
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,1,shadow_shape_cylinder_cone,Cylinder ↔ cone,8
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,2,shadow_shape_sphere_suzanne,Sphere ↔ Suzanne,8
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,3,shadow_shape_torus_gear,Torus ↔ gear,8
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,4,shadow_shape_spot_torus_knot,Spot ↔ torus knot,8
+shadow_shape,0,S1,Shape pair,shadow,Shadow,shadow_swap,shape,5,shadow_shape_teapot_spot,Teapot ↔ spot,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,0,shadow_rotation_torus_knot_90_neg90,Torus knot 90° ↔ −90°,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,1,shadow_rotation_torus_knot_0_180,Torus knot 0° ↔ 180°,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,2,shadow_rotation_torus_0_45,Torus 0° ↔ 45°,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,3,shadow_rotation_spot_neg45_135,Spot −45° ↔ 135°,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,4,shadow_rotation_spot_45_90,Spot 45° ↔ 90°,8
+shadow_rotation,1,S2,Rotation,shadow,Shadow,shadow_swap,rotation,5,shadow_rotation_teapot_90_180,Teapot 90° ↔ 180°,8
+shadow_height,2,S3,Height,shadow,Shadow,shadow_swap,all,0,0.1,Low (0.1),48
+shadow_height,2,S3,Height,shadow,Shadow,shadow_swap,all,1,0.3,High (0.3),48
+shadow_light_extent,3,S4,Shadow softness,shadow,Shadow,shadow_swap,all,0,diffuse,Soft,48
+shadow_light_extent,3,S4,Shadow softness,shadow,Shadow,shadow_swap,all,1,point,Hard,48
+reflection_shape,4,R1,Shape pair,reflection,Reflection,reflection_swap,shape,0,reflection_shape_cube_sphere,Cube ↔ sphere,8
+reflection_shape,4,R1,Shape pair,reflection,Reflection,reflection_swap,shape,1,reflection_shape_cylinder_cone,Cylinder ↔ cone,8
+reflection_shape,4,R1,Shape pair,reflection,Reflection,reflection_swap,shape,2,reflection_shape_torus_knot_torus,Torus knot ↔ torus,8
+reflection_shape,4,R1,Shape pair,reflection,Reflection,reflection_swap,shape,3,reflection_shape_teapot_spot,Teapot ↔ spot,8
+reflection_rotation,5,R2,Rotation,reflection,Reflection,reflection_swap,rotation,0,reflection_rotation_torus_knot_90_neg90,Torus knot 90° ↔ −90°,8
+reflection_rotation,5,R2,Rotation,reflection,Reflection,reflection_swap,rotation,1,reflection_rotation_torus_knot_0_180,Torus knot 0° ↔ 180°,8
+reflection_rotation,5,R2,Rotation,reflection,Reflection,reflection_swap,rotation,2,reflection_rotation_spot_neg45_135,Spot −45° ↔ 135°,8
+reflection_rotation,5,R2,Rotation,reflection,Reflection,reflection_swap,rotation,3,reflection_rotation_spot_45_90,Spot 45° ↔ 90°,8
+reflection_color,6,R3,Color,reflection,Reflection,reflection_swap,color,0,reflection_color_cube_small,Cube: small hue shift,8
+reflection_color,6,R3,Color,reflection,Reflection,reflection_swap,color,1,reflection_color_cube_large,Cube: large hue shift,8
+reflection_color,6,R3,Color,reflection,Reflection,reflection_swap,color,2,reflection_color_torus_small,Torus: small hue shift,8
+reflection_color,6,R3,Color,reflection,Reflection,reflection_swap,color,3,reflection_color_torus_large,Torus: large hue shift,8
+reflection_height,7,R4,Height,reflection,Reflection,reflection_swap,all,0,0.1,Low (0.1),48
+reflection_height,7,R4,Height,reflection,Reflection,reflection_swap,all,1,0.3,High (0.3),48
+reflection_roughness,8,R5,Floor roughness,reflection,Reflection,reflection_swap,all,0,0.0,Smooth (0.0),48
+reflection_roughness,8,R5,Floor roughness,reflection,Reflection,reflection_swap,all,1,0.3,Rough (0.3),48
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,0,light_shape_cube,Cube,16
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,1,light_shape_cylinder,Cylinder,16
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,2,light_shape_sphere,Sphere,16
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,3,light_shape_spot,Spot,16
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,4,light_shape_teapot,Teapot,16
+light_shape,9,L1,Shape,light,Light direction,lightdir_swap,light_direction,5,light_shape_torus_knot,Torus knot,16
+light_material,10,L2,Material,light,Light direction,lightdir_swap,all,0,diffuse,Diffuse,48
+light_material,10,L2,Material,light,Light direction,lightdir_swap,all,1,metal,Metal,48
+light_height,11,L3,Height,light,Light direction,lightdir_swap,all,0,0.2,Low (0.2),48
+light_height,11,L3,Height,light,Light direction,lightdir_swap,all,1,2.0,High (2.0),48
+light_angle,12,L4,Light angle,light,Light direction,lightdir_swap,all,0,15.0,15°,48
+light_angle,12,L4,Light angle,light,Light direction,lightdir_swap,all,1,30.0,30°,48

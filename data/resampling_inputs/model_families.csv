@@ -1,0 +1,26 @@
+model,family
+cogvideox15_5b,CogVideoX
+cogvideox_2b,CogVideoX
+cogvideox_5b,CogVideoX
+flux1_dev,FLUX.1
+flux1_schnell,FLUX.1
+flux2_klein_4b,FLUX.2
+flux2_klein_9b,FLUX.2
+flux2_klein_base_4b,FLUX.2
+flux2_klein_base_9b,FLUX.2
+hidream_o1,HiDream
+hunyuan_video,HunyuanVideo
+jit_b32,JiT
+jit_h32,JiT
+jit_l32,JiT
+ltx_13b,LTX-Video
+ltx_2b,LTX-Video
+pixelgen_512,PixelGen
+qwen_image,Qwen-Image
+qwen_image_2512,Qwen-Image
+sdxl,Stable Diffusion
+stable_diffusion_15,Stable Diffusion
+stable_diffusion_3,Stable Diffusion
+wan21_14b,Wan
+wan21_1_3b,Wan
+wan22_a14b,Wan

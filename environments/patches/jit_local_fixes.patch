@@ -1,0 +1,50 @@
+diff --git a/model_jit.py b/model_jit.py
+index d2f53ab..6b39ec1 100644
+--- a/model_jit.py
++++ b/model_jit.py
+@@ -94,7 +94,7 @@ class LabelEmbedder(nn.Module):
+ def scaled_dot_product_attention(query, key, value, dropout_p=0.0) -> torch.Tensor:
+     L, S = query.size(-2), key.size(-2)
+     scale_factor = 1 / math.sqrt(query.size(-1))
+-    attn_bias = torch.zeros(query.size(0), 1, L, S, dtype=query.dtype).cuda()
++    attn_bias = torch.zeros(query.size(0), 1, L, S, dtype=query.dtype, device=query.device)
+ 
+     with torch.cuda.amp.autocast(enabled=False):
+         attn_weight = query.float() @ key.float().transpose(-2, -1) * scale_factor
+diff --git a/util/model_util.py b/util/model_util.py
+index f772c13..ae63135 100644
+--- a/util/model_util.py
++++ b/util/model_util.py
+@@ -125,13 +125,20 @@ class VisionRotaryEmbeddingFast(nn.Module):
+             cos_pad = torch.ones(num_cls_token, D, dtype=cos_img.dtype, device=cos_img.device)
+             sin_pad = torch.zeros(num_cls_token, D, dtype=sin_img.dtype, device=sin_img.device)
+ 
+-            self.freqs_cos = torch.cat([cos_pad, cos_img], dim=0).cuda()  # [N_cls+N_img, D]
+-            self.freqs_sin = torch.cat([sin_pad, sin_img], dim=0).cuda()
++            freqs_cos = torch.cat([cos_pad, cos_img], dim=0)  # [N_cls+N_img, D]
++            freqs_sin = torch.cat([sin_pad, sin_img], dim=0)
+         else:
+-            self.freqs_cos = freqs.cos().view(-1, freqs.shape[-1]).cuda()
+-            self.freqs_sin = freqs.sin().view(-1, freqs.shape[-1]).cuda()
++            freqs_cos = freqs.cos().view(-1, freqs.shape[-1])
++            freqs_sin = freqs.sin().view(-1, freqs.shape[-1])
+ 
+-    def forward(self, t): return  t * self.freqs_cos + rotate_half(t) * self.freqs_sin
++        # Keep RoPE tensors device-agnostic so model.to(device) works for any CUDA index.
++        self.register_buffer("freqs_cos", freqs_cos, persistent=False)
++        self.register_buffer("freqs_sin", freqs_sin, persistent=False)
++
++    def forward(self, t):
++        freqs_cos = self.freqs_cos.to(device=t.device, dtype=t.dtype)
++        freqs_sin = self.freqs_sin.to(device=t.device, dtype=t.dtype)
++        return t * freqs_cos + rotate_half(t) * freqs_sin
+ 
+ 
+ class RMSNorm(nn.Module):
+@@ -198,4 +205,4 @@ def get_1d_sincos_pos_embed_from_grid(embed_dim, pos):
+     emb_cos = np.cos(out) # (M, D/2)
+ 
+     emb = np.concatenate([emb_sin, emb_cos], axis=1)  # (M, D)
+-    return emb
+\ No newline at end of file
++    return emb

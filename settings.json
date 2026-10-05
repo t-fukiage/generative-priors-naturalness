@@ -1,0 +1,6 @@
+{
+  "data_root": "data",
+  "output_root": "results",
+  "bootstrap_root": "results/analysis/bootstrap",
+  "font_family": ["Arial", "DejaVu Sans"]
+}

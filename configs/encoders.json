@@ -1,0 +1,115 @@
+{
+  "resnet50_imagenet": {
+    "backend_name": "ResNet50_Weights.IMAGENET1K_V2",
+    "readout": "native_head",
+    "batch_size": 1,
+    "dtype": "float32",
+    "layers": 16
+  },
+  "clip_vit_b16": {
+    "backend_name": "openai/clip-vit-base-patch16",
+    "revision": "57c216476eefef5ab752ec549e440a49ae4ae5f3",
+    "readout": "raw",
+    "batch_size": 1,
+    "dtype": "float32",
+    "layers": 12
+  },
+  "dinov2_base_patch_spatial": {
+    "backend_name": "facebook/dinov2-base",
+    "revision": "f9e44c814b77203eaa57a6bdbbd535f21ede1415",
+    "dtype": "float32",
+    "expected_register_tokens": 0,
+    "readout": "native_head",
+    "patch_padding": "bottom_right_zero_after_normalization",
+    "batch_size": 1,
+    "layers": 12
+  },
+  "siglip2_base_patch16_224": {
+    "backend_name": "google/siglip2-base-patch16-224",
+    "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+    "dtype": "float32",
+    "instruction": null,
+    "readout": "native_head",
+    "batch_size": 1,
+    "layers": 12
+  },
+  "pe_core_b16_224": {
+    "backend_name": "timm/vit_pe_core_base_patch16_224.fb",
+    "revision": "0f9fb1eea04d135faa1f15af05734fb996fcaf94",
+    "dtype": "float32",
+    "instruction": null,
+    "readout": "raw",
+    "batch_size": 1,
+    "timm_model_name": "vit_pe_core_base_patch16_224.fb",
+    "layers": 12
+  },
+  "dinov2_giant_patch_spatial": {
+    "backend_name": "facebook/dinov2-giant",
+    "revision": "611a9d42f2335e0f921f1e313ad3c1b7178d206d",
+    "dtype": "bfloat16",
+    "expected_register_tokens": 0,
+    "readout": "native_head",
+    "patch_padding": "bottom_right_zero_after_normalization",
+    "batch_size": 1,
+    "layers": 40
+  },
+  "pe_core_g14_448": {
+    "backend_name": "timm/vit_pe_core_gigantic_patch14_448.fb",
+    "revision": "fb096c09d13bd2e3827aed4dbdffb8a6b8e0c10b",
+    "dtype": "bfloat16",
+    "timm_model_name": "vit_pe_core_gigantic_patch14_448.fb",
+    "readout": "raw",
+    "batch_size": 1,
+    "layers": 50
+  },
+  "dinov3_vith16plus_patch_spatial": {
+    "backend_name": "facebook/dinov3-vith16plus-pretrain-lvd1689m",
+    "revision": "c807c9eeea853df70aec4069e6f56b28ddc82acc",
+    "dtype": "bfloat16",
+    "expected_register_tokens": 4,
+    "readout": "native_head",
+    "batch_size": 1,
+    "layers": 32
+  },
+  "dinov3_vit7b16_patch_spatial": {
+    "backend_name": "facebook/dinov3-vit7b16-pretrain-lvd1689m",
+    "revision": "b80367753773648a6793235ab9c65cdbb029506f",
+    "dtype": "bfloat16",
+    "expected_register_tokens": 4,
+    "readout": "native_head",
+    "batch_size": 1,
+    "layers": 40
+  },
+  "qwen3_vl_embedding_2b": {
+    "backend_name": "Qwen/Qwen3-VL-Embedding-2B",
+    "revision": "9f2f7e710d6d81056aa5c0a4f04764fec6bb7bda",
+    "dtype": "bfloat16",
+    "min_pixels": 4096,
+    "max_pixels": 262144,
+    "instruction": "Represent the user's input.",
+    "readout": "native_head",
+    "batch_size": 2,
+    "layers": 28
+  },
+  "qwen3_vl_embedding_8b": {
+    "backend_name": "Qwen/Qwen3-VL-Embedding-8B",
+    "revision": "2c4565515e0f265c6511776e7193b22c0968ddc7",
+    "dtype": "bfloat16",
+    "min_pixels": 4096,
+    "max_pixels": 262144,
+    "instruction": "Represent the user's input.",
+    "readout": "native_head",
+    "batch_size": 1,
+    "layers": 36
+  },
+  "jina_clip_v2": {
+    "backend_name": "jinaai/jina-clip-v2",
+    "revision": "aa37cced63635d18c302683b0aab74102a33f096",
+    "dtype": "bfloat16",
+    "implementation_repo": "jinaai/jina-clip-implementation",
+    "implementation_revision": "39e6a55ae971b59bea6e44675d237c99762e7ee2",
+    "readout": "native_head",
+    "batch_size": 8,
+    "layers": 24
+  }
+}

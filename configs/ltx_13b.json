@@ -1,0 +1,88 @@
+{
+  "display_name": "LTX-Video 13B dev",
+  "noise_seed": 12012027,
+  "evaluation_steps": 50,
+  "checkpoint": {
+    "repo_id": "Lightricks/LTX-Video-0.9.7-dev",
+    "revision": "2101082f5eb5540770a2df43747feadb6f69b889"
+  },
+  "width": 768,
+  "height": 512,
+  "frames": 17,
+  "vae_tiling": true,
+  "vae_slicing": true,
+  "model_cpu_offload": true,
+  "pipeline": "condition",
+  "max_sequence_length": 256,
+  "frame_rate": 25,
+  "presets": {
+    "paper": {
+      "timestep_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "noise_draws": 20
+    },
+    "sample": {
+      "timestep_indices": [
+        0,
+        16,
+        33,
+        49
+      ],
+      "noise_draws": 2
+    }
+  },
+  "spatial_shape": [
+    16,
+    24
+  ]
+}

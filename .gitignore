@@ -1,0 +1,18 @@
+# Runtime-only material; approved data/losses and Illumination PNGs are tracked.
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv*/
+.env
+.env.*
+/results/
+/thatcher-work/
+/inputs/
+/generated/
+/data/stimuli/stimuli_thatcher/
+*.dat
+*.dat.bz2
+*.pt
+*.pth
+*.ckpt
+*.safetensors

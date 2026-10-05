@@ -1,0 +1,38 @@
+group,model,display_name,parameter_b,count_kind,count_scope,count_note
+generative,cogvideox15_5b,CogVideoX1.5-5B,5.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,cogvideox_2b,CogVideoX-2B,2.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,cogvideox_5b,CogVideoX-5B,5.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,flux1_dev,FLUX.1 dev,12.0,public_nominal,denoiser_or_flow_backbone,Public nominal FLUX.1 backbone size.
+generative,flux1_schnell,FLUX.1 schnell,12.0,public_nominal,denoiser_or_flow_backbone,Public nominal FLUX.1 backbone size.
+generative,flux2_klein_4b,FLUX.2 klein 4B,4.0,public_nominal,denoiser_or_flow_backbone,Nominal 4B size in the checkpoint name.
+generative,flux2_klein_9b,FLUX.2 klein 9B,9.0,public_nominal,denoiser_or_flow_backbone,Nominal 9B size in the checkpoint name.
+generative,flux2_klein_base_4b,FLUX.2 klein base 4B,4.0,public_nominal,denoiser_or_flow_backbone,Nominal 4B size in the checkpoint name.
+generative,flux2_klein_base_9b,FLUX.2 klein base 9B,9.0,public_nominal,denoiser_or_flow_backbone,Nominal 9B size in the checkpoint name.
+generative,hidream_o1,HiDream-O1-Image,8.804887792,checkpoint_exact,denoiser_or_flow_backbone,Exact tensor count for the HiDream denoiser/flow backbone.
+generative,hunyuan_video,HunyuanVideo,13.0,public_nominal,denoiser_or_flow_backbone,Public nominal backbone size.
+generative,jit_b32,JiT-B/32,0.133387008,checkpoint_exact,denoiser_or_flow_backbone,Exact tensor count for the JiT-B/32 denoiser checkpoint.
+generative,jit_h32,JiT-H/32,0.956383296,checkpoint_exact,denoiser_or_flow_backbone,Exact tensor count for the JiT-H/32 denoiser checkpoint.
+generative,jit_l32,JiT-L/32,0.46179632,checkpoint_exact,denoiser_or_flow_backbone,Exact tensor count for the JiT-L/32 denoiser checkpoint.
+generative,ltx_13b,LTX-Video 13B dev,13.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,ltx_2b,LTX-Video 2B dev,2.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the pinned transformer checkpoint filename.
+generative,pixelgen_512,PixelGen 512,1.123312384,checkpoint_exact,denoiser_or_flow_backbone,Exact count for one denoiser copy in the checkpoint; the duplicate EMA copy is not double-counted.
+generative,qwen_image,Qwen-Image,20.0,public_nominal,denoiser_or_flow_backbone,Public nominal Qwen-Image backbone size.
+generative,qwen_image_2512,Qwen-Image-2512,20.0,public_nominal,denoiser_or_flow_backbone,Public nominal Qwen-Image backbone size.
+generative,sdxl,SDXL Base 1.0,2.6,architecture_approximate,denoiser_or_flow_backbone,Approximate U-Net parameter scale; text encoders and VAE are excluded.
+generative,stable_diffusion_15,Stable Diffusion v1.5,0.86,architecture_approximate,denoiser_or_flow_backbone,Approximate U-Net parameter scale; text encoder and VAE are excluded.
+generative,stable_diffusion_3,Stable Diffusion 3 Medium,2.0,public_nominal,denoiser_or_flow_backbone,Public nominal model size.
+generative,wan21_14b,Wan2.1 T2V 14B,14.0,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,wan21_1_3b,Wan2.1 T2V 1.3B,1.3,public_nominal,denoiser_or_flow_backbone,Nominal size in the model identifier.
+generative,wan22_a14b,Wan2.2 T2V A14B,14.0,public_nominal,denoiser_or_flow_backbone,Nominal active-expert size in the model identifier; total mixture capacity is not used.
+encoder,clip_vit_b16,CLIP ViT-B/16,0.08619264,local_component_exact,scoring_network,CLIP vision tower plus visual projection used by the score.
+encoder,dinov2_base_patch_spatial,DINOv2-B spatial patches,0.08658048,local_component_exact,scoring_network,Vision backbone used to compute the embedding distance.
+encoder,dinov2_giant_patch_spatial,DINOv2-g/14 spatial patches,1.136480768,recorded_backbone_count,scoring_network,Full vision backbone.
+encoder,dinov3_vit7b16_patch_spatial,DINOv3-7B/16 spatial patches,6.716,recorded_backbone_count,scoring_network,Full vision backbone.
+encoder,dinov3_vith16plus_patch_spatial,DINOv3-H+/16 spatial patches,0.84,recorded_backbone_count,scoring_network,Full vision backbone.
+encoder,jina_clip_v2,Jina CLIP v2,0.304382912,local_component_exact,scoring_network,Jina vision tower used by the score.
+encoder,pe_core_b16_224,PE-Core B/16 224,0.093673984,local_component_exact,scoring_network,Perception Encoder vision tower used by the score.
+encoder,pe_core_g14_448,PE-Core G/14 448,1.88203392,recorded_backbone_count,scoring_network,Full vision backbone.
+encoder,qwen3_vl_embedding_2b,Qwen3-VL-Embedding 2B,2.127532032,local_component_exact,scoring_network,Full embedding scorer instantiated by the image embedding pipeline.
+encoder,qwen3_vl_embedding_8b,Qwen3-VL-Embedding 8B,8.14479384,checkpoint_exact,scoring_network,Full embedding scorer.
+encoder,resnet50_imagenet,ResNet-50 ImageNet V2,0.023508032,local_component_exact,scoring_network,"Image encoder used by the score, excluding the unused final classifier."
+encoder,siglip2_base_patch16_224,SigLIP 2 Base/16 224,0.092884224,local_component_exact,scoring_network,SigLIP 2 vision tower used by the score.

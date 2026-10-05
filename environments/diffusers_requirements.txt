@@ -1,0 +1,15 @@
+# Verified Python 3.10.12; see README.md for the CUDA wheel index.
+torch==2.7.1
+torchvision==0.22.1
+diffusers @ git+https://github.com/huggingface/diffusers.git@5910a1cc6c48fe0e9a2038c0b36cb9a24663932b
+transformers==5.2.0
+accelerate==0.34.2
+huggingface-hub==1.5.0
+numpy==1.26.4
+Pillow==10.4.0
+scipy==1.14.1
+safetensors==0.4.5
+einops==0.8.2
+timm==1.0.24
+sentencepiece==0.2.0
+protobuf==6.33.5

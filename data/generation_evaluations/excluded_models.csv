@@ -1,0 +1,8 @@
+model,modality,reason
+jit_b32,image,No corresponding public evaluation record in the fixed snapshot.
+jit_h32,image,No corresponding public evaluation record in the fixed snapshot.
+jit_l32,image,No corresponding public evaluation record in the fixed snapshot.
+ltx_13b,video,The available LTX leaderboard release does not establish correspondence to the evaluated checkpoint.
+ltx_2b,video,The available LTX leaderboard release does not establish correspondence to the evaluated checkpoint.
+pixelgen_512,image,No corresponding public evaluation record in the fixed snapshot.
+qwen_image_2512,image,The published Qwen Image Max 2512 entry is not verified as the evaluated public checkpoint and serving pipeline.

@@ -1,0 +1,502 @@
+[
+  {
+    "model": "flux2_klein_4b",
+    "display_name": "FLUX.2 klein 4B",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 32,
+      "map_width": 32,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "model": "flux2_klein_9b",
+    "display_name": "FLUX.2 klein 9B",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 32,
+      "map_width": 32,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "model": "flux2_klein_base_4b",
+    "display_name": "FLUX.2 klein base 4B",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 32,
+      "map_width": 32,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "model": "flux2_klein_base_9b",
+    "display_name": "FLUX.2 klein base 9B",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 32,
+      "map_width": 32,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "model": "flux1_dev",
+    "display_name": "FLUX.1 dev",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "flux1_schnell",
+    "display_name": "FLUX.1 schnell",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "jit_b32",
+    "display_name": "JiT-B/32",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 512,
+      "map_width": 512,
+      "array_layout": "timestep_height_width",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      512,
+      0,
+      512
+    ]
+  },
+  {
+    "model": "jit_l32",
+    "display_name": "JiT-L/32",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 512,
+      "map_width": 512,
+      "array_layout": "timestep_height_width",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      512,
+      0,
+      512
+    ]
+  },
+  {
+    "model": "jit_h32",
+    "display_name": "JiT-H/32",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 512,
+      "map_width": 512,
+      "array_layout": "timestep_height_width",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      512,
+      0,
+      512
+    ]
+  },
+  {
+    "model": "pixelgen_512",
+    "display_name": "PixelGen 512",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 512,
+      "map_width": 512,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      512,
+      0,
+      512
+    ]
+  },
+  {
+    "model": "qwen_image_2512",
+    "display_name": "Qwen-Image-2512",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "qwen_image",
+    "display_name": "Qwen-Image",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "stable_diffusion_3",
+    "display_name": "Stable Diffusion 3 Medium",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "stable_diffusion_15",
+    "display_name": "Stable Diffusion v1.5",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "sdxl",
+    "display_name": "SDXL Base 1.0",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 64,
+      "map_width": 64,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      64,
+      0,
+      64
+    ]
+  },
+  {
+    "model": "cogvideox_2b",
+    "display_name": "CogVideoX-2B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 60,
+      "map_width": 90,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 480,
+      "target_width": 720,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      60,
+      15,
+      75
+    ]
+  },
+  {
+    "model": "ltx_2b",
+    "display_name": "LTX-Video 2B v0.9.0",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 16,
+      "map_width": 24,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 512,
+      "target_width": 768,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      16,
+      4,
+      20
+    ]
+  },
+  {
+    "model": "ltx_13b",
+    "display_name": "LTX-Video 13B dev",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 16,
+      "map_width": 24,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 512,
+      "target_width": 768,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      16,
+      4,
+      20
+    ]
+  },
+  {
+    "model": "wan21_1_3b",
+    "display_name": "Wan2.1 T2V 1.3B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 60,
+      "map_width": 104,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 480,
+      "target_width": 832,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      60,
+      22,
+      82
+    ]
+  },
+  {
+    "model": "cogvideox_5b",
+    "display_name": "CogVideoX-5B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 60,
+      "map_width": 90,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 480,
+      "target_width": 720,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      60,
+      15,
+      75
+    ]
+  },
+  {
+    "model": "cogvideox15_5b",
+    "display_name": "CogVideoX1.5-5B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 96,
+      "map_width": 170,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 768,
+      "target_width": 1360,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      96,
+      37,
+      133
+    ]
+  },
+  {
+    "model": "hunyuan_video",
+    "display_name": "HunyuanVideo",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 68,
+      "map_width": 120,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 544,
+      "target_width": 960,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      68,
+      26,
+      94
+    ]
+  },
+  {
+    "model": "wan21_14b",
+    "display_name": "Wan2.1 T2V 14B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 60,
+      "map_width": 104,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 480,
+      "target_width": 832,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      60,
+      22,
+      82
+    ]
+  },
+  {
+    "model": "wan22_a14b",
+    "display_name": "Wan2.2 T2V A14B",
+    "modality": "video",
+    "native_geometry": {
+      "map_height": 60,
+      "map_width": 104,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "fit_pad",
+      "target_height": 480,
+      "target_width": 832,
+      "temporal_aggregation": "mean_latent_frames_before_serialization"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      60,
+      22,
+      82
+    ]
+  },
+  {
+    "model": "hidream_o1",
+    "display_name": "HiDream-O1-Image",
+    "modality": "image",
+    "native_geometry": {
+      "map_height": 512,
+      "map_width": 512,
+      "array_layout": "spatial_by_timestep",
+      "preprocess": "stretch",
+      "target_height": 512,
+      "target_width": 512,
+      "temporal_aggregation": "none"
+    },
+    "crop_y0_y1_x0_x1": [
+      0,
+      512,
+      0,
+      512
+    ]
+  }
+]

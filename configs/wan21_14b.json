@@ -1,0 +1,86 @@
+{
+  "display_name": "Wan2.1 T2V 14B",
+  "noise_seed": 12012027,
+  "evaluation_steps": 50,
+  "checkpoint": {
+    "repo_id": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
+    "revision": "38ec498cb3208fb688890f8cc7e94ede2cbd7f68"
+  },
+  "width": 832,
+  "height": 480,
+  "frames": 17,
+  "vae_tiling": true,
+  "vae_slicing": true,
+  "model_cpu_offload": true,
+  "flow_shift": 3.0,
+  "presets": {
+    "paper": {
+      "timestep_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ],
+      "noise_draws": 20
+    },
+    "sample": {
+      "timestep_indices": [
+        0,
+        16,
+        33,
+        49
+      ],
+      "noise_draws": 2
+    }
+  },
+  "spatial_shape": [
+    60,
+    104
+  ]
+}
