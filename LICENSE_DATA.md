@@ -2,7 +2,7 @@
 
 The experimental data and assets in this repository are available under the following terms:
 
-## Scientific Data (CC BY 4.0)
+## Data and Annotations (CC BY 4.0)
 
 All numerical data, precomputed model losses (`data/losses/`), anonymized participant ratings (`data/human_responses/`), encoder/IQA distances, reference scores, and factor annotations are licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)** license:
 https://creativecommons.org/licenses/by/4.0/

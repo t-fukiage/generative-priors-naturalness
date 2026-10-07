@@ -1,6 +1,6 @@
 # Supplementary Code: Do Generative Priors Align with Human Naturalness Perception?
 
-This repository contains the reproduction code and scientific data for **"Do Generative Priors Align with Human Naturalness Perception?"**.
+This repository contains the reproduction code and data for **"Do Generative Priors Align with Human Naturalness Perception?"**.
 
 The complete CPU-analysis inputs are included: 25 model-loss NPZ files (~138 MB), anonymized participant ratings, vision encoder and IQA scores, factor metadata, and spatial maps. The 576 Illumination stimulus PNGs (~238 MB) are also included.
 
@@ -151,7 +151,8 @@ See [scoring/README.md](scoring/README.md), [encoders/README.md](encoders/README
 
 ## License
 
-- **Code:** [MIT License](LICENSE)
-- **Scientific Data & Annotations:** [CC BY 4.0](LICENSE_DATA.md)
+- **Code and documentation:** [NTT Software License Agreement for Evaluation](LICENSE). Use is limited to internal, non-commercial testing, analysis, and evaluation of the paper's methods, subject to the agreement. The third-party components listed below follow their respective licenses.
+- **Data and Annotations:** [CC BY 4.0](LICENSE_DATA.md)
 - **Illumination Stimulus Images:** [CC BY-SA 4.0](LICENSE_DATA.md) (adapted from KuBasic / Kubric project)
-- **Thatcher Stimulus Generator:** [GPLv3](stimulus_generation/thatcher/LICENSE)
+- **Thatcher Stimulus Generator:** [GPL-3.0-only](stimulus_generation/thatcher/LICENSE)
+- **JiT Compatibility Patch:** [MIT License](environments/patches/LICENSE_JIT)
